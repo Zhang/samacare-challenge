@@ -64,4 +64,5 @@ typings/
 .DS_Store
 
 # Output of build
-dist/
+dist/*.js
+dist/*.map
