@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
+// I like this styling tool that you're using
 import withStyles from 'react-jss';
 
 const styles = {
@@ -20,6 +21,7 @@ const Controls = (props) => {
     handleSubmit,
     saveName,
   } = props;
+
   return (
     <div>
       <div className={classes.controls}>
@@ -32,6 +34,7 @@ const Controls = (props) => {
       <div className={classes.controls}>
       Select a form:
         <select value={currentForm} onChange={handleChange} name="currentForm">
+          { /* You might want to consider using more sensible arg names in the .map iterable method. Perhaps index and formName */ }
           {forms.map((x, y) => <option key={y}>{x}</option>)}
         </select>
       </div>
@@ -46,6 +49,7 @@ const Controls = (props) => {
   );
 };
 
+// Nice, you're the only candidate (I think) who's implemented proptypes and defaults
 Controls.defaultProps = {
   currentForm: '',
   forms: [],

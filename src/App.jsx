@@ -44,6 +44,7 @@ class App extends React.Component {
   };
 
   handleClick = (e) => {
+    // Glad this worked out for you
     const { clientX, clientY } = e;
     const { markupBoxes } = this.state;
     this.setState({

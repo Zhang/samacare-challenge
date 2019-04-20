@@ -4,7 +4,6 @@ const path = require('path');
 const SRC_DIR = path.resolve(__dirname, './src');
 const DIST_DIR = path.resolve(__dirname, './dist');
 
-
 module.exports = {
   entry: `${SRC_DIR}/index.js`,
   mode: process.env.NODE_ENV || 'development',
